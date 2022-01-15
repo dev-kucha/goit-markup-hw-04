@@ -264,6 +264,34 @@ ul {
   margin-right: 30px;
 }
 
+.feature-list .item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-secondary);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 4px;
+}
+
+.item-antenna::before {
+  background-image: url(../images/antenna-1.svg);
+}
+
+.item-clock::before {
+  background-image: url(../images/clock-1.svg);
+}
+
+.item-diagram::before {
+  background-image: url(../images/diagram-1.svg);
+}
+
+.item-astronaut::before {
+  background-image: url(../images/astronaut-1.svg);
+}
+
 .feature-list-title {
   font-weight: 700;
   font-size: 14px;
