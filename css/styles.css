@@ -263,22 +263,8 @@ ul {
   width: 70px;
   height: 70px;
 }
-.item-antenna::before {
-  background-image: url(../images/antenna-1.svg);
-}
 
-.item-clock::before {
-  background-image: url(../images/clock-1.svg);
-}
-
-.item-diagram::before {
-  background-image: url(../images/diagram-1.svg);
-}
-
-.item-astronaut::before {
-  background-image: url(../images/astronaut-1.svg);
-}
-*/ .feature-list-title {
+.feature-list-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -334,6 +320,8 @@ ul {
 .item-description {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .team .title {
@@ -341,7 +329,6 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-
   margin-bottom: 10px;
 }
 
@@ -349,6 +336,46 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.team-item-social {
+  display: flex;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-item:hover,
+.social-item:focus {
+  background-color: var(--accent-color);
+}
+
+.social-item:hover .item-social-link,
+.social-item:focus .item-social-link {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+.item-social-link {
+  /* display: inline-block; */
+  color: #afb1b8;
+}
+
+.item-social-icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 12px;
+  fill: currentColor;
 }
 
 /* portfolio */
