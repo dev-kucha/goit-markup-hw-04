@@ -158,7 +158,6 @@ ul {
 
 .contacts .link {
   display: inline-flex;
-  /* align-items: flex-start; */
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
@@ -169,27 +168,16 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.contacts .link::before {
-  content: '';
+.link-icon {
   width: 20px;
   height: 16px;
   margin-right: 10px;
-
-  background-repeat: no-repeat;
-  background-position: center;
+  fill: currentColor;
 }
 
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
-}
-
-.link-email::before {
-  background-image: url(../images/envelope.svg);
-}
-
-.link-phone::before {
-  background-image: url(../images/smartphone.svg);
 }
 
 /* Main */
