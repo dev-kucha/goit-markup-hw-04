@@ -346,29 +346,24 @@ ul {
 .social-item {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-
-  cursor: pointer;
 }
 
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-item:hover,
-.social-item:focus {
-  background-color: var(--accent-color);
+.item-social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
 }
 
-.social-item:hover .item-social-link,
-.social-item:focus .item-social-link {
+.item-social-link:hover,
+.item-social-link:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
-}
-
-.item-social-link {
-  /* display: inline-block; */
-  color: #afb1b8;
 }
 
 .item-social-icon {
