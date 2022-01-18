@@ -358,6 +358,7 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  text-align: center;
   color: var(--decoration-grey-color);
 }
 
@@ -412,7 +413,7 @@ ul {
 }
 
 .clients-logo {
-  display: block;
+  /* display: block; */
 
   fill: currentColor;
 }
@@ -503,6 +504,13 @@ ul {
   background-color: var(--background-footer);
 }
 
+.footer-container {
+  display: flex;
+}
+
+.address-column {
+  margin-right: 70px;
+}
 .footer .logo {
   display: block;
   color: var(--white-text-color);
@@ -519,7 +527,6 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  /*  */
 }
 
 .footer .link.geo {
@@ -529,4 +536,27 @@ ul {
 .footer .link:hover,
 .footer .link:focus {
   color: var(--white-text-color);
+}
+.social-column .text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  margin-bottom: 20px;
+}
+
+.footer-item-social {
+  display: flex;
+}
+
+.footer .item-social-link {
+  color: var(--white-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .item-social-link:hover,
+.footer .item-social-link:focus {
+  background-color: var(--accent-color);
 }
